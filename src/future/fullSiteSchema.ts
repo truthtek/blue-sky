@@ -20,6 +20,7 @@ export const FUTURE_SITE_ROUTES: readonly NavRoute[] = [
   { id: 'building-services', label: 'Building Services', path: '/services/building', isPublishedInHolding: false },
   { id: 'development-consultancy', label: 'Development Consultancy', path: '/services/consultancy', isPublishedInHolding: false },
   { id: 'construction', label: 'Construction', path: '/services/construction', isPublishedInHolding: false },
+  { id: 'facilities-management', label: 'Facilities Management', path: '/services/facilities-management', isPublishedInHolding: false },
   { id: 'installation', label: 'Installation', path: '/services/installation', isPublishedInHolding: false },
   { id: 'project-management', label: 'Project Management', path: '/services/project-management', isPublishedInHolding: false },
   { id: 'portfolio', label: 'Projects & Portfolio', path: '/projects', isPublishedInHolding: false },
@@ -52,6 +53,12 @@ export const CONFIRMED_SERVICES: readonly ServiceDetail[] = [
     title: 'Construction',
     brief: 'Principal contracting, structural works, conversions, and bespoke commercial/residential builds delivered to rigorous safety standards.',
     capabilities: ['New Build Construction', 'Structural Extensions & Conversions', 'Civil & Groundworks', 'Turnkey Contracting'],
+  },
+  {
+    id: 'facilities-management',
+    title: 'Facilities Management',
+    brief: 'Comprehensive planned preventative maintenance (PPM), reactive repairs, building compliance testing, and asset operations.',
+    capabilities: ['Planned Preventative Maintenance (PPM)', 'Statutory Compliance & Testing', 'Asset Lifecycle & Energy Management', '24/7 Reactive Maintenance Operations'],
   },
   {
     id: 'installation',

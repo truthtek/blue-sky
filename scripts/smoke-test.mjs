@@ -9,7 +9,7 @@ console.log('--- BLUE X LTD SMOKE TESTS ---');
 
 // 1. Verify index.html content
 const indexHtml = fs.readFileSync(path.resolve('index.html'), 'utf-8');
-assert(indexHtml.includes('BLUE X LTD | Construction, Installation & Project Management'), 'Index title missing');
+assert(indexHtml.includes('BLUE X LTD | Construction, Facilities Management, Installation & Project Management'), 'Index title missing');
 assert(indexHtml.includes('lang="en-GB"'), 'British English lang attribute missing');
 assert(indexHtml.includes('HomeAndConstructionBusiness'), 'Schema.org structured data missing');
 assert(indexHtml.includes('+447448162876'), 'Telephone missing in structured data');
@@ -46,7 +46,7 @@ console.log('✓ Business configuration integrity verified');
 
 // 4. Verify future schema is modular and present
 import { CONFIRMED_SERVICES, FUTURE_SITE_ROUTES } from '../src/future/fullSiteSchema.ts';
-assert(CONFIRMED_SERVICES.length === 5, 'Must have 5 confirmed service pillars');
+assert(CONFIRMED_SERVICES.length === 6, 'Must have 6 confirmed service pillars');
 assert(FUTURE_SITE_ROUTES.length >= 8, 'Future route map must have comprehensive routes');
 console.log('✓ Future full site schema ready for post-holding phase');
 

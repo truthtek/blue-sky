@@ -9,7 +9,7 @@ export const BUSINESS_CONFIG: BusinessDetails = {
   name: 'BLUE X LTD',
   legalStatus: 'Private Limited Company (England & Wales)',
   primaryDescriptor: 'Building Services and Development Consultant',
-  serviceDescriptor: 'Construction, Installation & Project Management',
+  serviceDescriptor: 'Construction, Facilities Management, Installation & Project Management',
   artworkLegacyDescriptor: 'Building Services & Construction Management',
   slogan: 'The Niche In Professional Works',
   location: {

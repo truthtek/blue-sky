@@ -112,7 +112,7 @@ export const HoldingHero: React.FC<HoldingHeroProps> = ({ onOpenChat }) => {
             We’re building a new online home for <strong className="font-semibold text-slate-900">BLUE X LTD</strong>.
           </p>
           <p>
-            For enquiries about construction, installation and project management, please contact our team.
+            For enquiries about construction, facilities management, installation and project management, please contact our team.
           </p>
         </div>
 

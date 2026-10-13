@@ -387,7 +387,7 @@ export const LiveChatModal: React.FC<LiveChatModalProps> = ({
                     value={enquiryForm.message}
                     onChange={(e) => setEnquiryForm({ ...enquiryForm, message: e.target.value })}
                     className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:outline-none"
-                    placeholder="Describe your construction, installation, or project management requirements..."
+                    placeholder="Describe your construction, facilities management, installation, or project management requirements..."
                   />
                 </div>
 

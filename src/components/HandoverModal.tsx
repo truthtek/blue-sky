@@ -129,7 +129,7 @@ export const HandoverModal: React.FC<HandoverModalProps> = ({ isOpen, onClose })
               <div className="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
                 <span className="font-bold text-slate-900">Phase 1: Core Service Pages</span>
                 <p className="text-[11px] text-slate-600">
-                  Dedicated landing pages for Building Services, Development Consultancy, Construction, Installation, and Project Management.
+                  Dedicated landing pages for Building Services, Development Consultancy, Construction, Facilities Management, Installation, and Project Management.
                 </p>
               </div>
               <div className="p-3 bg-slate-50 border border-slate-200 rounded-lg space-y-1">
