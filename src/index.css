@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-blue: #0038a8;
+    --brand-navy: #001f54;
+    --brand-sky: #0284c7;
+    --brand-light: #f8fafc;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    scroll-behavior: smooth;
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  /* Accessible focus styling */
+  *:focus-visible {
+    outline: 2px solid #0038a8;
+    outline-offset: 3px;
+  }
+}
+
+/* Subtle architectural drafting grid background */
+.architectural-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 56, 168, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 56, 168, 0.04) 1px, transparent 1px);
+}
+
+/* Blueprint subtle linework entrance */
+@keyframes blueprintDraw {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0.2;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes entranceSettle {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-entrance {
+  animation: entranceSettle 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-blueprint-line {
+  stroke-dasharray: 1000;
+  animation: blueprintDraw 2.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Respect user's reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-entrance,
+  .animate-blueprint-line {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+}

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="ringGrad1" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#0047ba"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="ringGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#0038a8"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="ovalCenter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0043aa"/>
+      <stop offset="100%" stop-color="#002b70"/>
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#002060" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Clean background with architectural tone -->
+  <rect width="800" height="320" fill="url(#bgGrad)"/>
+
+  <!-- Architectural linework background sketch (echoing the supplied 68296.jpg asset) -->
+  <g opacity="0.14" stroke="#003366" stroke-width="1.2" fill="none">
+    <!-- House eaves and modern canopy structure -->
+    <path d="M 120 280 L 120 170 L 260 90 L 400 90 L 400 280"/>
+    <path d="M 230 110 L 430 110 L 450 130 L 210 130 Z"/>
+    <path d="M 200 130 L 460 130 L 480 150 L 180 150 Z"/>
+    <path d="M 150 170 L 420 170"/>
+    <line x1="280" y1="170" x2="280" y2="280"/>
+    <line x1="340" y1="170" x2="340" y2="280"/>
+    <!-- Pergola rafters -->
+    <line x1="220" y1="90" x2="250" y2="130"/>
+    <line x1="260" y1="90" x2="290" y2="130"/>
+    <line x1="300" y1="90" x2="330" y2="130"/>
+    <line x1="340" y1="90" x2="370" y2="130"/>
+    <line x1="380" y1="90" x2="410" y2="130"/>
+    <!-- Foliage on left edge -->
+    <path d="M 80 80 Q 95 65 110 85 Q 125 70 140 90 Q 155 80 160 105 Q 145 130 130 145 Q 115 160 95 150 Q 75 135 70 110 Z" fill="#003366" fill-opacity="0.04"/>
+  </g>
+
+  <!-- BXL Central Oval Logo Badge -->
+  <g transform="translate(400, 92)">
+    <!-- Outer concentric curved arcs/waves -->
+    <ellipse cx="0" cy="0" rx="190" ry="76" fill="none" stroke="url(#ringGrad1)" stroke-width="5" stroke-dasharray="140 12 180 14"/>
+    <ellipse cx="0" cy="0" rx="174" ry="67" fill="none" stroke="url(#ringGrad2)" stroke-width="4.5"/>
+    <ellipse cx="0" cy="0" rx="156" ry="58" fill="none" stroke="#0284c7" stroke-width="3" opacity="0.8"/>
+    <ellipse cx="0" cy="0" rx="142" ry="50" fill="none" stroke="#0038a8" stroke-width="4"/>
+
+    <!-- Central Solid Blue Oval -->
+    <ellipse cx="0" cy="0" rx="124" ry="43" fill="url(#ovalCenter)" filter="url(#subtleShadow)" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- BXL Letters inside oval -->
+    <text x="0" y="14" font-family="'Plus Jakarta Sans', 'Arial Black', Impact, sans-serif" font-size="44" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="3" style="text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+      BXL
+    </text>
+  </g>
+
+  <!-- "BLUE X LTD" Primary Brand Typography -->
+  <!-- Note the prominent royal blue, sharp spacing -->
+  <text x="400" y="222" font-family="'Plus Jakarta Sans', 'Outfit', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="900" fill="#0038a8" text-anchor="middle" letter-spacing="5">
+    BLUE X LTD
+  </text>
+
+  <!-- Original Subtitle in Asset 1 -->
+  <!-- "Building Services & Construction Management" -->
+  <text x="400" y="262" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="middle" letter-spacing="1.2">
+    Building Services &amp; Construction Management
+  </text>
+</svg>

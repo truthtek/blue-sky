@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" width="900" height="380">
+  <defs>
+    <!-- Deep Royal Blue Top Bar Gradient -->
+    <linearGradient id="footerBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#002159"/>
+      <stop offset="45%" stop-color="#003899"/>
+      <stop offset="100%" stop-color="#001d4d"/>
+    </linearGradient>
+
+    <!-- Union Jack fabric wave overlay filter -->
+    <linearGradient id="waveLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.35"/>
+      <stop offset="18%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="35%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="52%" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="68%" stop-color="#000000" stop-opacity="0.38"/>
+      <stop offset="85%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.45"/>
+    </linearGradient>
+
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <!-- SECTION 1: TOP CONTACT BAR (approx 150px height) -->
+  <rect x="0" y="0" width="900" height="160" fill="url(#footerBlueGrad)"/>
+
+  <!-- Left: Walsall, West Midlands Location Pin & Text -->
+  <g transform="translate(42, 54)">
+    <!-- Location Icon in White Circle -->
+    <circle cx="28" cy="26" r="24" fill="#002b70" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M 28 14 C 22.5 14 18 18.5 18 24 C 18 31 28 39 28 39 C 28 39 38 31 38 24 C 38 18.5 33.5 14 28 14 Z M 28 27 C 26.3 27 25 25.7 25 24 C 25 22.3 26.3 21 28 21 C 29.7 21 31 22.3 31 24 C 31 25.7 29.7 27 28 27 Z" fill="#ffffff"/>
+    
+    <text x="64" y="20" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff" letter-spacing="0.3">
+      Walsall, West Midlands,
+    </text>
+    <text x="64" y="44" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="600" fill="#e2e8f0" letter-spacing="0.3">
+      England, United Kingdom
+    </text>
+  </g>
+
+  <!-- Right: Phone & Email Contacts -->
+  <g transform="translate(530, 36)">
+    <!-- Phone Row -->
+    <g transform="translate(0, 0)">
+      <circle cx="20" cy="20" r="18" fill="#002b70" stroke="#38bdf8" stroke-width="1.8"/>
+      <path d="M 15 13 C 14 13 13 14 13 15 C 13 22 18 27 25 27 C 26 27 27 26 27 25 L 25.5 22 C 25.2 21.5 24.5 21.3 24 21.6 L 22.8 22.3 C 21.3 21.3 20 20 19 18.5 L 19.7 17.3 C 20 16.8 19.8 16.1 19.3 15.8 L 16.3 14.3 C 15.9 14.1 15.4 14.1 15 14.3 Z" fill="#ffffff"/>
+      <text x="50" y="26" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="0.6">
+        +44 7448 162876
+      </text>
+    </g>
+
+    <!-- Email Row with yellow tone pill outline as seen in 68297.jpg -->
+    <g transform="translate(0, 48)">
+      <circle cx="20" cy="20" r="18" fill="#002b70" stroke="#38bdf8" stroke-width="1.8"/>
+      <path d="M 13 15 L 27 15 C 27.5 15 28 15.5 28 16 L 28 25 C 28 25.5 27.5 26 27 26 L 13 26 C 12.5 26 12 25.5 12 25 L 12 16 C 12 15.5 12.5 15 13 15 Z M 20 21 L 26 16.5 L 14 16.5 Z M 13.5 25 L 18.5 20.5 L 13.5 16.5 Z M 26.5 25 L 26.5 16.5 L 21.5 20.5 Z" fill="#ffffff"/>
+      
+      <!-- Styled container for email as shown in original artwork -->
+      <rect x="46" y="2" width="280" height="35" rx="6" fill="#002566" stroke="#fef08a" stroke-width="1.2" opacity="0.95"/>
+      <text x="58" y="26" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18.5" font-weight="700" fill="#fef08a" letter-spacing="0.5">
+        bluexltd@yahoo.com
+      </text>
+    </g>
+  </g>
+
+  <!-- SECTION 2: UNION JACK SILK BANNER WITH SLOGAN (y=160 to 380, height=220px) -->
+  <g transform="translate(0, 160)">
+    <clipPath id="flagClip">
+      <rect x="0" y="0" width="900" height="220"/>
+    </clipPath>
+
+    <g clip-path="url(#flagClip)">
+      <!-- Base Royal Navy Blue Field of Union Jack -->
+      <rect width="900" height="220" fill="#012169"/>
+
+      <!-- Diagonal St Andrew's White Crosses -->
+      <path d="M 0 0 L 900 220 M 900 0 L 0 220" stroke="#ffffff" stroke-width="56"/>
+
+      <!-- Diagonal St Patrick's Red Crosses (asymmetrical pinwheels) -->
+      <path d="M 0 0 L 450 110" stroke="#c8102e" stroke-width="19"/>
+      <path d="M 450 110 L 900 220" stroke="#c8102e" stroke-width="19" transform="translate(0, 10)"/>
+      <path d="M 900 0 L 450 110" stroke="#c8102e" stroke-width="19"/>
+      <path d="M 450 110 L 0 220" stroke="#c8102e" stroke-width="19" transform="translate(0, -10)"/>
+
+      <!-- St George's Central White Cross -->
+      <rect x="0" y="80" width="900" height="60" fill="#ffffff"/>
+      <rect x="400" y="0" width="100" height="220" fill="#ffffff"/>
+
+      <!-- St George's Central Red Cross -->
+      <rect x="0" y="92" width="900" height="36" fill="#c8102e"/>
+      <rect x="420" y="0" width="60" height="220" fill="#c8102e"/>
+
+      <!-- Rippling silk drape shadow overlay for photographic cloth feel -->
+      <rect width="900" height="220" fill="url(#waveLight)"/>
+      <rect width="900" height="220" fill="#000000" opacity="0.22"/>
+
+      <!-- Slogan Centered in Bold Condensed Typography -->
+      <!-- "The Niche In Professional Works" -->
+      <text x="450" y="128" font-family="'Outfit', 'Plus Jakarta Sans', Impact, 'Arial Black', sans-serif" font-size="46" font-weight="900" fill="#f8fafc" text-anchor="middle" letter-spacing="1" filter="url(#textGlow)">
+        The Niche In Professional Works
+      </text>
+    </g>
+  </g>
+</svg>
